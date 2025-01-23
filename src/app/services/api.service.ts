@@ -18,7 +18,7 @@ export class ApiService {
       return this.http.get(`${environment.apiUrl}/todos`);
     }
 
-    getUserTasks(userId: number){
+    getUserTasks(userId: any){
       return this.http.get(`${environment.apiUrl}/todos?userId=${userId}`);
     }
 

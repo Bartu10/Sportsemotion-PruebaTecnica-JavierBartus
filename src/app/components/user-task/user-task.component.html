@@ -1,1 +1,9 @@
-<p>user-task works!</p>
+<div class="users">
+  <div class="users-list" *ngIf="tasks">
+    <div class="user" *ngFor="let task of tasks">
+      <h2>{{ task.title }}</h2>
+      <div class="line"></div>
+      <button [ngClass]="{ 'completed': task.completed, 'pending': !task.completed }" (click)="toggleTaskStatus(task)">{{ task.completed ? 'Completada' : 'Pendiente' }}</button>
+    </div>
+  </div>
+</div>
