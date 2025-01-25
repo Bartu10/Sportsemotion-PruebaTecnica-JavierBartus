@@ -1,0 +1,9 @@
+<nav class="navbar" [class.expanded]="isHome">
+  <div class="container">
+    <ul class="nav-links">
+      <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a></li>
+      <li><a routerLink="/users" routerLinkActive="active">Usuarios</a></li>
+      <li><a routerLink="/tasks" routerLinkActive="active">Tareas</a></li>
+    </ul>
+  </div>
+</nav>
