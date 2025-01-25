@@ -1,9 +1,15 @@
 <nav class="navbar" [class.expanded]="isHome">
   <div class="container">
+    <span *ngIf="isHome">Prueba Técnica Javier Bartús</span>
+
     <ul class="nav-links">
       <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a></li>
       <li><a routerLink="/users" routerLinkActive="active">Usuarios</a></li>
       <li><a routerLink="/tasks" routerLinkActive="active">Tareas</a></li>
     </ul>
   </div>
+
+
+
+
 </nav>

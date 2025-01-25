@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------------------- */
+/* Navbar Principal                                                           */
+/* -------------------------------------------------------------------------- */
 .navbar {
   background-color: #2d2d2d;
   color: white;
@@ -6,15 +9,17 @@
   transition: height 0.5s ease-in-out;
 
   &.expanded {
-    height: 100vh; /* Expande el navbar para ocupar toda la pantalla */
+    height: 100vh;
 
-    a{
+    a {
       transition: height 0.5s ease-in-out;
       font-size: 2rem !important;
     }
-
   }
 
+  /* ------------------------------------------------------------------------ */
+  /* Contenedor Interno del Navbar                                            */
+  /* ------------------------------------------------------------------------ */
   .container {
     height: 100%;
     display: flex;
@@ -23,6 +28,9 @@
     place-content: center;
   }
 
+  /* ------------------------------------------------------------------------ */
+  /* Enlaces de Navegación                                                    */
+  /* ------------------------------------------------------------------------ */
   .nav-links {
     margin: 0 !important;
     list-style: none;
@@ -44,7 +52,11 @@
 
         &:hover,
         &.active {
-          background-image: linear-gradient(to right, #ff004c42 0, rgba(255, 0, 76, 0.26) 100%);
+          background-image: linear-gradient(
+            to right,
+            #ff004c42 0,
+            rgba(255, 0, 76, 0.26) 100%
+          );
           background-repeat: no-repeat;
           background-position: bottom left;
           animation: expandBackground 1s forwards;
@@ -54,6 +66,9 @@
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* Animación del Subrayado                                              */
+/* -------------------------------------------------------------------------- */
 @keyframes expandBackground {
   from {
     background-size: 0 30%;
@@ -61,4 +76,22 @@
   to {
     background-size: 100% 30%;
   }
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Créditos                                              */
+/* -------------------------------------------------------------------------- */
+
+span{
+  top: 80%;
+  position: absolute;
+  color: #ff004c;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  animation: fadeIn 1s forwards;
 }
