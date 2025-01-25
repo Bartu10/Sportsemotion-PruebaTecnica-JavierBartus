@@ -1,6 +1,38 @@
 <div class="users">
-  <div class="users-list" *ngIf="tasks">
-    <div class="user" *ngFor="let task of tasks">
+  <div class="header">
+    <div class="user-info">
+    <h1>Tareas de {{userComplete.name}}</h1>
+    <h4>{{userComplete.email}}</h4>
+    </div>
+    <div class="line"></div>
+    <div class="tasks-info">
+      <span class="info">Tareas: {{tasks.length}}</span>
+      <span class="completed">Completadas: {{ completedTasks }}</span>
+      <span class="pending">Pendientes: {{ pendingTasks }}</span>
+    </div>
+    <div class="line"></div>
+
+    <div class="filter-buttons">
+      <button class="filter all" (click)="filterTasks('all')">Mostrar Todas</button>
+      <button class="filter completed" (click)="filterTasks('completed')">Mostrar Solo Completadas</button>
+      <button class="filter pending" (click)="filterTasks('pending')">Mostrar Solo Pendientes</button>
+    </div>
+
+    <div class="line"></div>
+
+
+    <div class="sort-selector">
+      <label for="sort">Ordenar por:</label>
+      <select id="sort" (change)="sortTasks($event)" [disabled]="this.filterSelected !== 'all'">
+        <option value="alphabetical">Orden Alfabético</option>
+        <option value="completed">Completadas Primero</option>
+        <option value="pending">Pendientes Primero</option>
+      </select>
+    </div>
+  </div>
+  <div class="users-list" *ngIf="tasks && userComplete">
+
+    <div class="user" *ngFor="let task of filteredTasks">
       <h2>{{ task.title }}</h2>
       <div class="line"></div>
       <button [ngClass]="{ 'completed': task.completed, 'pending': !task.completed }" (click)="toggleTaskStatus(task)">{{ task.completed ? 'Completada' : 'Pendiente' }}</button>
