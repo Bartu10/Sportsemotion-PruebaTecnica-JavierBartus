@@ -4,28 +4,28 @@
 
 ### Paso 1: Traer Proyecto de Git
 
-1.Instalar GIT en tu PC
+1. Instalar GIT en tu PC
 
-2.Acceder a la carpeta donde quieres realizar la instalacion
+2. Acceder a la carpeta donde quieres realizar la instalación
 
-3.Ejecutar 
+3. Ejecutar 
 ```bash
 git clone https://github.com/Bartu10/Sportsemotion-PruebaTecnica-JavierBartus.git
 ```
 
-4.Acceder al proyecto 
+4. Acceder al proyecto 
 ```bash
 cd Sportsemotion-PruebaTecnica-JavierBartus
 ```
 
-5.(Opcional) Si quieres acceder con Visual Studio Code ejecuta:
+5. (Opcional) Si quieres acceder con Visual Studio Code ejecuta:
 ```bash
 code .
 ```
 
 ### Paso 2: Instalar Dependencias
 
-1. Debes tener Instalado npm y node
+1. Debes tener instalado npm y node
 ```bash
 node -v
 npm -v
@@ -45,7 +45,7 @@ npm run start
 
 2. Accede a la URL
 ```bash
-http://localhost:4200/users
+http://localhost:4200
 ```
 
 ### Paso 4: Ejecutar Test Unitarios
