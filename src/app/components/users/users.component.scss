@@ -1,8 +1,11 @@
-/* General container for the users */
+/* -------------------------------------------------------------------------- */
+/* Contenedor Principal de Usuarios                                           */
+/* -------------------------------------------------------------------------- */
 .users {
-  height: auto;
+  height: 80%;
   width: 80%;
-  margin: 40px auto;
+  padding-top: 40px;
+  margin: 1% auto;
   padding: 20px 30px;
   background: #ffffff;
   border: 1px solid #e0e0e0;
@@ -12,22 +15,28 @@
   color: #444;
 }
 
-/* Header styling */
+/* -------------------------------------------------------------------------- */
+/* Cabecera                                                                   */
+/* -------------------------------------------------------------------------- */
 .users h1 {
   text-align: center;
   font-size: 2.4rem;
-  color: #1e88e5;
+  color: #444;
   margin-bottom: 20px;
 }
 
-/* User list */
+/* -------------------------------------------------------------------------- */
+/* Lista de Usuarios                                                          */
+/* -------------------------------------------------------------------------- */
 .users-list {
   display: flex;
   flex-direction: column;
-  gap: 3px; /* Space between user cards */
+  gap: 3px;
 }
 
-/* Individual user container */
+/* -------------------------------------------------------------------------- */
+/* Elementos Individuales de Usuario                                          */
+/* -------------------------------------------------------------------------- */
 .user:nth-child(even) {
   background: #f0f2f3;
 }
@@ -44,15 +53,15 @@
   height: 30px;
 }
 
-
-
-/* Hover effect for user container */
+/* Efecto Hover en Usuario */
 .user:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* User name and email */
+/* -------------------------------------------------------------------------- */
+/* Nombre y Email de Usuario                                                  */
+/* -------------------------------------------------------------------------- */
 .user h2 {
   font-size: 1.5rem;
   margin: 0;
@@ -67,11 +76,13 @@
   width: 15%;
 }
 
-/* Button styling */
+/* -------------------------------------------------------------------------- */
+/* Botones                                                                    */
+/* -------------------------------------------------------------------------- */
 .user button {
   padding: 10px 20px;
   font-size: 1rem;
-  background: #1e88e5;
+  background: #a71d46;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -79,20 +90,21 @@
   transition: background-color 0.2s, transform 0.2s;
 }
 
-/* Button hover effect */
+/* Hover y Active en Botones */
 .user button:hover {
-  background: #1565c0;
+  background: #444;
   transform: scale(1.05);
 }
 
-/* Button active effect */
 .user button:active {
-  background: #0d47a1;
+  background: #444;
   transform: scale(1);
 }
 
-
-.line{
+/* -------------------------------------------------------------------------- */
+/* Línea Vertical                                                             */
+/* -------------------------------------------------------------------------- */
+.line {
   height: 80%;
   width: 1px;
   background-color: #e0e0e0;

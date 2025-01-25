@@ -27,7 +27,12 @@ export class UsersComponent {
     });
   }
 
-  goToUserTasks(userId: number){
+  goToUserTasks(user: any){
+
+    localStorage.setItem('user', JSON.stringify(user));
+
+    const userId = user.id;
+
     this.router.navigate(['/tasks', userId]);
 
   }
@@ -35,7 +40,7 @@ export class UsersComponent {
 
   openLocation(lat: string, lng: string): void {
     const url = `https://www.google.com/maps?q=${lat},${lng}`;
-    window.open(url, '_blank'); // Abrir en una nueva pestaña
+    window.open(url, '_blank');
   }
 
 
