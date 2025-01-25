@@ -8,6 +8,17 @@
   overflow: hidden;
   transition: height 0.5s ease-in-out;
 
+  img{
+    position: absolute;
+    /* height: 100%; */
+    filter: invert(1);
+    opacity: 0.1;
+    z-index: 1;
+    top: -3%;
+
+  }
+
+
   &.expanded {
     height: 100vh;
 
@@ -37,6 +48,7 @@
     display: flex;
     gap: 1rem;
     width: 60%;
+    padding: 0;
     justify-content: space-around;
 
     li {
@@ -87,11 +99,42 @@
 span{
   top: 80%;
   position: absolute;
-  color: #ff004c;
+  color: #444;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 20px;
   display: block;
   animation: fadeIn 1s forwards;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Responsive                                                                 */
+/* -------------------------------------------------------------------------- */
+
+
+@media(max-width: 900px){
+
+  .expanded{
+
+
+  .nav-links{
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+
+    li{
+      width: 100%;
+    }
+  }
+
+}
+
+.navbar .nav-links{
+  width: 80%;
+}
+
 }
