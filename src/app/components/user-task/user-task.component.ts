@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 export class UserTaskComponent {
 
 
-    constructor(public api: ApiService, private router: Router) { }
+    constructor(public api: ApiService, public router: Router) { }
 
     users: any = [];
     tasks: any = [];
