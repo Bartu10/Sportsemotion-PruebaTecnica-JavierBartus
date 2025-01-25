@@ -1,59 +1,58 @@
-# SportsemotionPruebaTecnicaJavierBartus
+# SportsEmotion-Prueba Tecnica-Javier Bartus
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+## Guía de Instalacion Proyecto
 
-## Development server
+### Paso 1: Traer Proyecto de Git
 
-To start a local development server, run:
+1.Instalar GIT en tu PC
 
+2.Acceder a la carpeta donde quieres realizar la instalacion
+
+3.Ejecutar 
 ```bash
-ng serve
+git clone https://github.com/Bartu10/Sportsemotion-PruebaTecnica-JavierBartus.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+4.Acceder al proyecto 
 ```bash
-ng generate component component-name
+cd Sportsemotion-PruebaTecnica-JavierBartus
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+5.(Opcional) Si quieres acceder con Visual Studio Code ejecuta:
 ```bash
-ng generate --help
+code .
 ```
 
-## Building
+### Paso 2: Instalar Dependencias
 
-To build the project run:
-
+1. Debes tener Instalado npm y node
 ```bash
-ng build
+node -v
+npm -v
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+2. Instala las dependencias del proyecto
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
+### Paso 3: Ejecuta el proyecto
 
-For end-to-end (e2e) testing, run:
-
+1. Ejecuta el servidor de desarrollo
 ```bash
-ng e2e
+npm run start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+2. Accede a la URL
+```bash
+http://localhost:4200/users
+```
 
-## Additional Resources
+### Paso 4: Ejecutar Test Unitarios
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Ejecuta los test
+```bash
+npm run test
+```
+
+2. Observa como se ejecutan los test de forma correcta
